@@ -16,3 +16,21 @@ elif unit == "L":
 
 else:
     print(f"{unit} was not valid")
+
+
+
+# Temperature Converter
+
+unit = input("Is this temperature in celcious or Faranheit (C/F): ").upper()
+temp = float(input("Enter the temperature: "))
+
+if unit == "C":
+    temp = (9 * temp) / 5 + 32
+    print(f"The temperature in Faranheit is {temp}")
+
+elif unit =='F':
+    temp = (temp - 32) * 5 / 9
+    print(f"The temperature in celcious is {temp}")
+
+else:
+    print(f"{unit} is an invalid unit of measurnment")
